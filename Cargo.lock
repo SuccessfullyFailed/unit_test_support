@@ -15,11 +15,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "file_ref"
-version = "0.1.0"
-source = "git+https://github.com/SuccessfullyFailed/file_ref.git#b328241e2ab4278abfbe637074bd63e62beba30e"
-
-[[package]]
 name = "getrandom"
 version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -114,7 +109,6 @@ checksum = "adb9e6ca4f869e1180728b7950e35922a7fc6397f7b641499e8f3ef06e50dc83"
 name = "unit_test_support"
 version = "0.1.0"
 dependencies = [
- "file_ref",
  "rand",
 ]
 
