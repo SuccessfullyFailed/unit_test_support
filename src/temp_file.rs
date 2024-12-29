@@ -46,7 +46,7 @@ impl TempFile {
 
 	/// Generate a random file name.
 	fn random_file_name() -> String {
-		const FILE_NAME_CHARS:&str = "abcdefghijklmnopqrstuvwxyz1234567890_-.";
+		const FILE_NAME_CHARS:&str = "abcdefghijklmnopqrstuvwxyz1234567890";
 		const FILE_NAME_LENGTH:usize = 32;
 
 		let mut rng:ThreadRng = rand::thread_rng();
