@@ -9,6 +9,7 @@ static mut RESERVED_FILES:Mutex<Vec<String>> = Mutex::new(Vec::new());
 
 
 
+#[derive(Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub struct TempFile(String);
 impl TempFile {
 
