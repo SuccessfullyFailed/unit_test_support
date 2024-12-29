@@ -26,7 +26,7 @@ impl TempFile {
 
 	/// Generate a random file.
 	fn random_file(extension:Option<&str>) -> FileRef {
-		TEMP_FILE_DIR + &Self::random_file_name() + &extension.map(|e| format!(".{e}")).unwrap_or_default()
+		TEMP_FILE_DIR + &Self::random_file_name() + "." + &extension.unwrap_or("tmp")
 	}
 
 	/// Generate a random file name.
