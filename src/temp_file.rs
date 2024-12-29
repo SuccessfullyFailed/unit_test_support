@@ -67,7 +67,11 @@ impl Drop for TempFile {
 
 		// Delete file.
 		if Path::new(&self.0).exists() {
-			remove_file(&self.0).expect("Could not delete temp file");
+			if self.0.contains('.') {
+				remove_file(&self.0).expect("Could not delete temp file");
+			} else {
+				remove_dir_all(&self.0).expect("Could not delete temp dir");
+			}
 		}
 
 		// Remove from reserved files.
